@@ -2,6 +2,6 @@
 $RESOURCE_GROUP = "vided"
 $STORAGE_ACCOUNT_NAME = "videdcentralstorenmount"
 $LOCATION = "centralindia"
-$SHARE_NAME = "acishare"
+$SHARE_NAME = "vided-storage-mount"
 $ACI_NAME = "vided-ffmpeg-container"
 $IMG = "docker.io/pratik1188/vided-ffmpeg-container:v1.0"
