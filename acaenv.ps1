@@ -20,4 +20,4 @@ az containerapp env storage set `
   --azure-file-share-name $SHARE_NAME `
   --name $CONTAINER_APP_ENV_NAME `
   --resource-group $RESOURCE_GROUP `
-  --storage-name mount
+  --storage-name root
