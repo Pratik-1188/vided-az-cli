@@ -6,4 +6,4 @@ az staticwebapp create `
     --branch main `
     --login-with-github
 
-# first time you do this it willfail, go to the .yaml deploymen file in .github folder and then update output location to output_location: "/"
+# first time you do this it willfail, go to the .yaml deploymen file in .github folder and then update output location to output_location: "/dist" because when u build the react project the output is placwed in this location
