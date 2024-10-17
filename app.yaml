@@ -1,73 +1,21 @@
-id: /subscriptions/29c8eb8b-53bf-4bd1-8630-d218ffac9b86/resourceGroups/vided/providers/Microsoft.App/containerapps/vided-spring-boot-app
-identity:
-  type: None
 location: Central India
 name: vided-spring-boot-app
+resourceGroup: vided
+type: Microsoft.App/containerApps
 properties:
+  managedEnvironmentId: /subscriptions/29c8eb8b-53bf-4bd1-8630-d218ffac9b86/resourceGroups/vided/providers/Microsoft.App/managedEnvironments/vided-container-env
+  workloadProfileName: Consumption
   configuration:
     activeRevisionsMode: Single
-    dapr: null
     ingress:
-      additionalPortMappings: null
       allowInsecure: false
-      clientCertificateMode: null
-      corsPolicy: null
-      customDomains: null
-      exposedPort: 0
       external: true
       fqdn: vided-spring-boot-app.happysand-0cd6e089.centralindia.azurecontainerapps.io
-      ipSecurityRestrictions: null
-      stickySessions: null
       targetPort: 8080
       traffic:
         - latestRevision: true
           weight: 100
       transport: Auto
-    maxInactiveRevisions: 100
-    registries: null
-    secrets: null
-    service: null
-  customDomainVerificationId: BDE5A523938E559A16150268E6CB2E1A7E84EE9EA28B59C0D3933925A4C5B579
-  delegatedIdentities: []
-  environmentId: /subscriptions/29c8eb8b-53bf-4bd1-8630-d218ffac9b86/resourceGroups/vided/providers/Microsoft.App/managedEnvironments/vided-container-env
-  eventStreamEndpoint: https://centralindia.azurecontainerapps.dev/subscriptions/29c8eb8b-53bf-4bd1-8630-d218ffac9b86/resourceGroups/vided/containerApps/vided-spring-boot-app/eventstream
-  latestReadyRevisionName: vided-spring-boot-app--1dp1g5c
-  latestRevisionFqdn: vided-spring-boot-app--1dp1g5c.happysand-0cd6e089.centralindia.azurecontainerapps.io
-  latestRevisionName: vided-spring-boot-app--1dp1g5c
-  managedEnvironmentId: /subscriptions/29c8eb8b-53bf-4bd1-8630-d218ffac9b86/resourceGroups/vided/providers/Microsoft.App/managedEnvironments/vided-container-env
-  outboundIpAddresses:
-    - 20.207.113.244
-    - 20.207.114.82
-    - 20.207.113.247
-    - 20.207.113.242
-    - 4.188.105.82
-    - 4.213.216.206
-    - 4.188.110.244
-    - 4.186.33.69
-    - 4.186.36.246
-    - 4.186.37.141
-    - 20.204.252.66
-    - 20.204.255.44
-    - 20.207.112.119
-    - 20.204.254.22
-    - 4.213.194.124
-    - 4.213.194.130
-    - 4.213.194.85
-    - 4.213.194.149
-    - 4.213.194.114
-    - 4.213.194.154
-    - 4.213.205.82
-    - 4.213.204.181
-    - 4.213.207.189
-    - 4.213.204.194
-    - 4.213.206.161
-    - 20.235.217.156
-    - 20.235.216.117
-    - 4.213.206.222
-    - 4.213.204.249
-    - 20.235.217.115
-    - 4.186.33.65
-  provisioningState: Succeeded
   runningStatus: Running
   template:
     volumes:
@@ -75,7 +23,7 @@ properties:
         storageName: mystoragemount
         storageType: AzureFile
     containers:
-      - image: pratik1188/vided-spring-boot-app:v1
+      - image: pratik1188/vided-spring-boot-app:v1.1
         name: vided-spring-boot-app
         volumeMounts:
           - volumeName: my-azure-file-volume
@@ -92,13 +40,3 @@ properties:
       rules: null
     serviceBinds: null
     terminationGracePeriodSeconds: null
-  workloadProfileName: Consumption
-resourceGroup: vided
-systemData:
-  createdAt: "2024-10-14T15:28:48.4729405"
-  createdBy: pratikbhosale1188@gmail.com
-  createdByType: User
-  lastModifiedAt: "2024-10-14T15:28:48.4729405"
-  lastModifiedBy: pratikbhosale1188@gmail.com
-  lastModifiedByType: User
-type: Microsoft.App/containerApps
